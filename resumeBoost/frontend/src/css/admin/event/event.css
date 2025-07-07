@@ -1,0 +1,107 @@
+
+.admin-event {
+  flex: 1;
+  height: calc(100vh - 80px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-event .admin-event-con {
+  flex: 0 1 1400px;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+
+  /* border: 1px solid #f00; */
+
+
+  position: relative;
+
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+
+.admin-event .admin-event-con #calendar-container {
+  width: 100%;
+
+  /* border: 1px solid #f00; */
+}
+
+
+/* calendar css */
+
+/* 일요일 날짜: 빨간색 */
+.fc .fc-day-sun a {
+  color: red;
+}
+
+/* 토요일 날짜: 파란색 */
+.fc .fc-day-sat a {
+  color: blue;
+}
+
+/* 일정표 툴 바  */
+.fc .fc-toolbar.fc-header-toolbar {
+  color: #000;
+  /* background-color: #f00; */
+}
+
+/* 이벤트 막대 스타일 */
+.fc-event {
+  padding: 5px 10px;
+  
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+
+  
+  background-color: rgb(131, 123, 202);
+  cursor: pointer;
+}
+
+
+
+/* --- */
+
+.calendar-day-info {
+  width: 100%;
+  height: 200px;
+
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(68, 68, 68);
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calendar-day-info .calendar-info-head {
+  display: flex;
+  gap: 20px;
+}
+
+.calendar-day-info > .calendar-info-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.calendar-day-info > .calendar-info-btns > button {
+
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+}

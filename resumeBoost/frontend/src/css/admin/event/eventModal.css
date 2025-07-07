@@ -1,0 +1,109 @@
+.event-modal {
+
+  width: 100%;
+  height: 100vh;
+
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+
+  background-color: rgba(53, 50, 50, 0.692);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-modal .event-modal-con {
+  background-color: #fff;
+  
+  flex: 0 1 600px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+
+  border-radius: 10px;
+  overflow: hidden;
+  /* box-shadow: inset 0 0 2px rgb(82, 80, 80); */
+
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+
+
+.event-modal .event-modal-con .event-modal-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.event-modal .event-modal-con .event-modal-btns span {
+  flex: 1;
+
+  background-color: #2C3E50;
+  color: #fff;
+
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+}
+
+
+.event-modal .event-modal-con .event-modal-title {
+  width: 100%;
+
+  display: flex;
+
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+.event-modal .event-modal-con .event-modal-title input {
+  flex: 1;
+  font-size: 20px;
+
+  border: 0;
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+
+
+.event-modal .event-modal-con .event-time-select input {
+
+  font-size: 16px;
+  
+  padding: 5px;
+  box-sizing: border-box;
+
+}
+
+
+.event-modal .event-modal-con > textarea {
+  width: 100%;
+
+  height: 200px;
+
+  resize: none; /* textarea 고정 */
+
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+
+  font-size: 16px;
+}

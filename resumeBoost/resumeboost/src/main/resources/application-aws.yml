@@ -1,0 +1,11 @@
+cloud:
+  aws:
+    s3:
+      bucket: lhsbucket98
+    stack:
+      auto: false
+    region:
+      static: ap-northeast-2
+    credentials:
+      access-key: AKIAQWHCPU7NAEB7GI6P
+      secret-key: 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

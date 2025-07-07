@@ -1,0 +1,79 @@
+/* 모달 창 */
+.admin-reply-modal {
+  width: 100%;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+
+  background-color: rgba(53, 50, 50, 0.692);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-reply-modal-con {
+  background-color: #fff;
+
+  flex: 0 1 1200px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 0 2px rgb(82, 80, 80);
+}
+
+.admin-reply-modal-con > ul {
+  overflow-y: auto;
+
+  width: 600px;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: inset 0 0 2px#000;
+  /* border: 1px solid #000; */
+  box-sizing: border-box;
+}
+
+.admin-reply-modal-con > ul > li {
+  padding: 10px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.admin-reply-modal-con .admin-reply-contents {
+  width: 100%;
+  /* border: 1px solid #f00; */
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: #f00;
+  color: #fff;
+
+  padding: 10px 15px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+}

@@ -1,0 +1,79 @@
+@import url(./left.css);
+@import url(./index.css);
+@import url(./member/member.css);
+@import url(./board/board.css);
+@import url(./board//boardDetail.css);
+@import url(./item/item.css);
+@import url(./item/itemDetail.css);
+@import url(./cart/cart.css);
+@import url(./cart/cartDetail.css);
+@import url(./pay/pay.css);
+@import url(./reply/replyModal.css);
+@import url(./pay/payDetail.css);
+@import url(./event/event.css);
+@import url(./event/eventModal.css);
+
+
+.admin {
+  width: 100%;
+  height: auto;
+}
+
+.admin .admin-con {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+
+}
+
+
+/* 오른쪽  */
+.admin .admin-con .admin-page {
+  flex: 1;
+
+  overflow-y: auto;
+}
+
+.admin .admin-con .admin-page .admin-header {
+  width: 100%;
+  height: 80px;
+
+  /* border: 1px solid #f00; */
+  box-shadow: inset -1px -1px 2px #cccccc;
+  box-sizing: border-box;
+
+  position: sticky;
+  top: 0;
+}
+
+.admin .admin-con .admin-page .admin-header > ul {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 10px;
+}
+
+.admin .admin-con .admin-page .admin-header > ul > li {
+  box-shadow: inset -1px -1px 1px #cccccc;
+}
+
+
+
+.admin .admin-con .admin-page .admin-header > ul > li > a {
+  
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+
+.admin .admin-con .admin-page .admin-header > ul > li.admin-icons img {
+  height: 35%;
+  display: block;
+}

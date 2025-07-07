@@ -1,0 +1,413 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+}
+
+/* 전체 레이아웃 */
+.mentorDetail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 160px);
+  align-items: center;
+}
+
+/* 프로필 배경 */
+.mentorDetail .profileDiv {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 40px;
+}
+
+/* 프로필 이미지 블러 효과 */
+.mentorDetail .profileImg {
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  padding: 1px;
+}
+
+/* 프로필 썸네일 */
+.mentorDetail .imgThum {
+  width: 1200px;
+  height: 1px;
+}
+
+.mentorDetail .imgThum img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+  border: 1px solid white;
+  background-color: white;
+  position: relative;
+  left: 60px;
+  top: -140px;
+}
+
+/* 컨텐츠 영역 */
+.mentorDetail-con {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.mentorDetail-con .mentor-detail {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 사이드바 (결제 영역) */
+.mentorDetail-con .mentor-pay {
+  position: sticky;
+  top: 98px;
+  flex: 1;
+  height: 250px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  justify-content: flex-end;
+  padding: 20px 0;
+  gap: 15px;
+}
+
+.mentorDetail-con .mentor-pay .mentor-text{
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.63;
+  color: #293341;
+  letter-spacing: -.01875rem;
+  word-break: break-word;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 버튼 스타일 */
+.mentorDetail-con .mentor-pay .mentor-btn1,
+.mentorDetail-con .mentor-pay .mentor-btn2 {
+  width: 85%;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.mentorDetail-con .mentor-pay .mentor-btn1 {
+  border: 1px solid #ddd;
+  color: #00c7ae;
+}
+
+.mentorDetail-con .mentor-pay .mentor-btn2 {
+  background-color: #00c7ae;
+  color: white;
+}
+
+/* 고정된 메뉴 */
+.mentorDetail-con .mentor-detail ul.info {
+  background-color: white;
+  position: sticky;
+  top: 80px;
+  display: flex;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  gap: 15px;
+}
+
+/* 멘토 정보 영역 */
+.mentorDetail-con .mentor-detail .mentorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 리스트 스타일 */
+.mentorDetail-con .mentor-detail ul.info li {
+  height: 100%;
+  padding: 18px 0;
+  cursor: pointer;
+}
+ul.info li.active {
+  color: #00c7ae;
+  font-weight: bold;
+  border-bottom: 2px solid #00c7ae;
+}
+
+/* 공통 스타일 적용 */
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails,
+.mentorDetail-con .mentor-detail .mentorInfo .mentorItems,
+.mentorDetail-con .mentor-detail .mentorInfo .mentorPortfolios,
+.mentorDetail-con .mentor-detail .mentorInfo .mentorImg,
+.mentorDetail-con .mentor-detail .mentorInfo .mentorReview {
+  width: 100%;
+  min-height: 500px;
+  border-bottom: 1px solid #ddd;
+  padding: 30px 0;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-top{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-top ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.5rem;
+  margin-top: 1.625rem;
+  background-color: #f6f7f9;
+  border-radius: 8px;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-top ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #293341;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-top ul li p{
+  display: flex;
+  align-items: center;
+  font-size: .875rem;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-top ul li span{
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-bottom{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-bottom h2{
+  margin-bottom: 1.625rem;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-bottom div{
+  position: relative;
+  z-index: -99;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-bottom div span{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #6a7685;
+  letter-spacing: -.0125rem;
+  white-space: pre-line;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-bottom .details-show{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  display: block;
+  height: 3.125rem;
+  background-image: linear-gradient(to bottom, #fff0, #ffffffe6 70%, #fff 99%);
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorDetails .details-bottom button{
+  margin-top: 1.5rem;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  color: #693bf2;
+  font-size: .875rem;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorPortfolios div{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentorDetail-con .mentor-detail .mentorInfo .mentorPortfolios div img{
+  width: 100%;
+  display: block;
+}
+
+.nopt{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #6a7685;
+}
+
+.review {
+ width: 100%;
+ margin-top: 26px;
+}
+
+.review ul{
+  width: 100%;
+}
+
+.review ul li{
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.review ul li .review-top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review ul li .review-top .review-top-left{
+  width: 100%;
+  font-weight: 500;
+}
+
+.review ul li .review-top .review-top-left .review-profile{
+  display: flex;
+  align-items: center;
+  color: rgb(93 93 93);
+  gap: 10px;
+  font-size: 16px;
+}
+
+.review ul li .review-top .review-top-left .review-profile .v{
+  background-color: rgb(224 224 224);
+  width: .0625rem;
+  height: .625rem;
+}
+
+.review ul li .review-top .review-top-right{
+  color: rgb(170 170 170 );
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.review ul li .review-body{
+  color: rgb(93 93 93 );
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.review ul li .review-body div{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  transition: all 0.3s;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  gap: 10px;
+}
+
+.review ul li .review-body div span{
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.review ul li .review-body div span:first-child:hover{
+  color: blue;
+}
+
+.review ul li .review-body div span:hover{
+  color: red;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content textarea{
+  width: 100%;
+  height: 300px;
+  border: 0;
+  margin-top: 20px;
+  resize: none;
+  border-radius: 8px;
+  box-shadow: 0 0 3px #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-actions button:hover{
+  background-color: #3b8b3d;
+}
+
+.modal-actions button:nth-child(2) {
+  background-color: #f44336;
+}
+
+.modal-actions button:nth-child(2):hover{
+  background-color: #bd332a;
+}

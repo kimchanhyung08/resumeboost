@@ -1,0 +1,280 @@
+/* 전체 컨테이너 */
+.board-write-container {
+  position: relative;
+  padding: 20px;
+}
+
+/* 모달 오버레이 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 모달 내용 */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+/* 모달 제목 */
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* 카테고리 버튼 */
+.category-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-buttons button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.category-buttons button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 모달 액션 버튼 */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.modal-actions button {
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ddd;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-actions button:hover {
+  background-color: #ccc;
+}
+
+
+.exit-btn{
+  background-color: red !important;
+  color: white !important;
+  transition: all 0.3s;
+}
+
+.exit-btn:hover{
+  background-color: rgb(197, 0, 0) !important;
+}
+
+.board-write-container {
+  max-width: 1000px;
+  min-height: calc(100vh - 280px);
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.write-content h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.selected-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.category-btn:hover {
+  background: #0056b3;
+}
+
+.write-form .form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#file[type="file"]{
+  /* border: 1px solid; */
+  /* padding: 10px 0;
+  box-sizing: border-box; */
+
+  display: none;
+}
+
+.form-group-last{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-group-last .imgView{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group-last .imgView img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.form-group-last label{
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #0095f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 350px;
+  resize: none;
+}
+
+.last-button{
+  display: flex;
+  gap: 10px;
+}
+
+.cancel{
+  flex: 1;
+  padding: 12px;
+  background: #bebebe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancel:hover {
+  background: #888888;
+}
+
+.submit-btn {
+  flex: 1;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+/* 스크롤바 전체 스타일 */
+::-webkit-scrollbar {
+  width: 6px; /* 스크롤바 너비 */
+  height: 6px; /* 가로 스크롤바 높이 */
+}
+
+/* 스크롤바 트랙 (배경) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 연한 회색 */
+  border-radius: 10px; /* 둥글게 */
+}
+
+/* 스크롤바 핸들 (움직이는 부분) */
+::-webkit-scrollbar-thumb {
+  background: #a0a0a0; /* 파란색 */
+  border-radius: 10px; /* 둥글게 */
+}
+
+/* 스크롤바 핸들 hover 효과 */
+::-webkit-scrollbar-thumb:hover {
+  background: #616161; /* 어두운 파란색 */
+  cursor: pointer;
+}
+
+/* input, textarea에 포커스가 있을 때 border 제거 */
+input:focus, textarea:focus {
+  outline: none;
+  border: 0;
+}
+
+/* 오류 메시지 스타일 */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

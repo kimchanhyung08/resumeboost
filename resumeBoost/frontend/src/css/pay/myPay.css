@@ -1,0 +1,77 @@
+.myPay {
+  width: 100%;
+  min-height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myPay .myPay-con {
+  display: flex;
+  min-width: 1200px;
+  min-height: calc(100vh - 160px);
+  gap: 20px;
+}
+.pay {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pay-items {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.pay-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.pay-footer {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.paymentType {
+  color: #007aff;
+}
+
+.totalPrice {
+  color: #ff6600;
+}
+
+.pay-date {
+  text-align: right;
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+}
+
+.filter-sort {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-sort select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-sort select:hover {
+  background-color: #fff;
+  border-color: #bbb;
+}

@@ -1,0 +1,283 @@
+.admin-member {
+  flex: 1;
+  height: calc(100vh - 80px);
+
+  /* border: 1px solid #f00; */
+
+}
+
+.admin-member .admin-member-con {
+  width: 100%;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0;
+  box-sizing: border-box;
+  
+}
+
+
+
+
+
+
+/* search */
+
+.admin-member .admin-member-con .admin-member-search {
+
+  width: 100%;
+  /* border: 1px solid #2be28d; */
+  /* border-radius: 10px; */
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.admin-member .admin-member-con .admin-member-search form {
+  flex: 0 1 1000px;
+
+  display: flex;
+  
+}
+
+.admin-member .admin-member-con .admin-member-search form select {
+  flex: 1;
+  
+  border: 2px solid #2be28d;
+}
+
+.admin-member .admin-member-con .admin-member-search form input {
+  flex: 5;
+
+  font-size: 30px;
+
+  border: 0;
+}
+
+.admin-member .admin-member-con .admin-member-search form input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.admin-member .admin-member-con .admin-member-search form button {
+
+  flex: 1;
+
+  border: 2px solid #2be28d;
+
+  background-color: #fff;
+
+  cursor: pointer;
+}
+
+/* click-search */
+
+.admin-member .admin-member-con .admin-member-click-search {
+  display: flex;
+  gap: 10px;
+
+}
+
+.admin-member .admin-member-con .admin-member-click-search span {
+  font-size: 20px;
+  background-color: #2be28d;
+  color: #fff;
+  
+  padding: 5px;
+  border-radius: 7px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.admin-member .admin-member-con .admin-member-click-search span:hover {
+  background-color: #2be28d;
+  opacity: 0.3;
+}
+
+/* member - list */
+
+.admin-member .admin-member-con .admin-member-list {
+  width: 80%;
+  height: 700px;
+
+  /* border: 1px solid #00f; */
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.admin-member .admin-member-con .admin-member-list .member-pocket {
+  /* border: 1px solid  rgb(255, 0, 0); */
+
+  display: flex;
+  gap: 20px;
+  
+  cursor: pointer;
+
+  box-shadow: inset -1px -1px 1px rgb(100, 98, 98);
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  transition: all 0.5s;
+}
+
+.admin-member .admin-member-con .admin-member-list .member-pocket:hover {
+  transform: translate(-5px, -5px);
+}
+
+.admin-member .admin-member-con .admin-member-list .member-pocket .member-img {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admin-member .admin-member-con .admin-member-list .member-pocket .member-img img {
+  width: 100%;
+  display: block;
+}
+
+
+
+/* 모달 창 */
+.admin-member-modal {
+
+  width: 100%;
+  height: 100vh;
+
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+
+  background-color: rgba(53, 50, 50, 0.692);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-member-modal-con {
+  background-color: #fff;
+  
+  flex: 0 1 1200px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  
+
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 0 2px rgb(82, 80, 80);
+}
+
+.admin-member-modal-con > form {
+  display: flex;
+  gap: 40px;
+}
+
+.admin-member-modal-con > form > ul {
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.admin-member-modal-con > form > ul > li {
+  display: flex;
+}
+
+.admin-member-modal-con > form > ul > li .admin-member-modal-img {
+  width: 100px;
+  height: 100px;
+}
+
+.admin-member-modal-con > form > ul > li label {
+  flex: 1;
+}
+
+.admin-member-modal-con > form > ul > li input {
+  flex: 1;
+
+  border: 0;
+  border-bottom: 1px solid #3d3d3d;
+  box-sizing: border-box;
+}
+
+.admin-member-modal-con > form > ul > li:last-child {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-member-modal-con > form > ul > li > span {
+  border: 1px solid #000;
+  box-sizing: border-box;
+
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+/* --- */
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: #f00;
+  color: #fff;
+
+  padding: 10px 15px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+}
+
+
+
+/* paging */
+
+.paging {
+  /* border: 5px solid #000; */
+}
+
+.paging > ul {
+  display: flex;
+
+  gap: 10px;
+}
+
+.paging > ul > li {
+
+  border: 3px solid rgb(87, 255, 205);
+  padding: 10px 15px;
+  box-sizing: border-box;
+
+
+  cursor: pointer;
+}

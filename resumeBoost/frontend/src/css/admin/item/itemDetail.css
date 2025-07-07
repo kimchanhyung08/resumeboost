@@ -1,0 +1,168 @@
+.admin-item-detail {
+  flex: 1;
+  height: calc(100vh - 80px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-item-detail .admin-item-detail-con {
+  flex: 0 1 1400px;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 1px solid #f00; */
+
+  position: relative;
+}
+
+
+.admin-item-detail-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  background-color: rgb(32, 201, 116);
+  color: #fff;
+
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+}
+
+
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap {
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  gap: 10px;
+
+  /* border: 1px solid #00f; */
+
+
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-left {
+  flex: 2;
+
+  display: flex;
+  flex-direction: column;
+
+
+
+  /* border: 1px solid #f00; */
+
+  padding: 30px;
+  box-shadow: inset 0 0 3px rgb(116, 113, 113);
+  border-radius: 10px;
+  box-sizing: border-box;
+  
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-left .admin-item-detail-info {
+  display: flex;
+  flex: 1;
+  
+
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-left .admin-item-detail-info > ul {
+  flex: 1;
+
+  /* border: 1px solid #f00; */
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-left .admin-item-detail-info > ul > li {
+
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(201, 197, 197);
+  box-sizing: border-box;
+
+  
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-left .admin-item-detail-info .admin-item-detail-img {
+  flex: 1;
+
+  /* border: 1px solid #f00; */
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-left .admin-item-detail-info .admin-item-detail-img > h1 {
+  width: 200px;
+  height: 200px;
+
+  /* border: 1px solid rgb(4, 0, 255); */
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-left .admin-item-detail-info .admin-item-detail-img > h1 img {
+  width: 100%;
+  display: block;
+}
+
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-left .admin-item-detail-insert {
+  /* border: 1px solid #f00; */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 1px #000;
+  box-sizing: border-box;
+
+  flex: 1;
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-right {
+  flex: 3;
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-right .item-list {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-right .item-list > .item-pocket {
+  
+  padding: 10px;
+  /* border: 1px solid #f00; */
+  box-shadow: inset 0 0 3px rgb(116, 113, 113);
+  border-radius: 10px;
+  box-sizing: border-box;
+
+}
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-right .item-list > .item-pocket > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+
+
+.admin-item-detail .admin-item-detail-con .admin-item-detail-wrap .admin-item-detail-right .item-list > .item-pocket li button {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+}

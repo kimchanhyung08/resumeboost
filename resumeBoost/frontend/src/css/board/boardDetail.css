@@ -1,0 +1,278 @@
+.detail-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-container .back{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-container .back .back-con{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 1px 0px rgb(240 240 240);
+}
+
+.detail-container .detail-top{
+  width: 100%;
+  max-width: 1200px;
+}
+
+.detail-container .detail-top .detail-profile{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 0px rgb(240 240 240);
+  gap: 10px;
+}
+
+.detail-container .detail-top .detail-profile .detail-profile-left{
+  height: 80px;
+  width: 80px;
+  background-color: #f5f5f5;
+  border-radius: 20%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-container .detail-top .detail-profile .detail-profile-left img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-container .detail-top .detail-profile .detail-profile-right{
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-container .detail-top .detail-profile .detail-profile-right .name{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.detail-container .detail-top .detail-profile .detail-profile-right .detail-profile-bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 13px;
+}
+
+.detail-container .detail-top .detail-profile .detail-profile-right .detail-profile-bottom .detail-bottom{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.detail-container .detail-top .detail-profile .detail-profile-right .detail-profile-bottom .detail-bottom-right{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.detail-container .detail-top .detail-profile .detail-profile-right .detail-profile-bottom .detail-bottom-right span{
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.detail-container .detail-top .detail-profile .detail-profile-right .detail-profile-bottom .detail-bottom-right span:hover{
+  color: rgb(59, 59, 59);
+}
+
+.detail-container .detail-top .detail-main{
+  width: 100%;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 10px 0px rgb(248 248 248);
+}
+
+.detail-container .detail-top .detail-main .detail-board-img{
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240 240 240);
+}
+
+.detail-container .detail-top .detail-main .detail-board-img img{
+  width: 50%;
+  max-height: 100%;
+  display: block;
+}
+
+.detail-container .detail-top .detail-main .detail-main-footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #777;
+}
+
+.detail-container .detail-top .detail-main .detail-main-footer .detail-main-footer-right{
+  display: flex;
+}
+
+.detail-container .detail-top .detail-main .detail-main-footer .detail-main-footer-right span{
+  margin-left: 10px;
+}
+
+/* Add these styles to your existing CSS file */
+
+.detail-reply {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.detail-reply-header {
+  box-shadow: 0 2px 0 #ddd;
+}
+
+.detail-reply-header textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+}
+
+.detail-reply-header textarea:focus{
+  border: 1px solid #ddd;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.reply-button{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.reply-button-right{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reply-button-right > button{
+  padding: 8px 16px;
+  box-sizing: border-box;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reply-button-right > button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.reply-item {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.reply-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reply-profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  background-color: #f5f5f5;
+  object-fit: cover;
+}
+
+.reply-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reply-author {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.reply-metadata {
+  font-size: 14px;
+  color: #666;
+}
+
+.reply-metadata span {
+  margin-right: 8px;
+}
+
+.reply-bottom{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.reply-content {
+  margin-left: 52px;
+  line-height: 1.5;
+}
+
+.reply-delete{
+  cursor: pointer;
+  color: #777;
+  font-size: 14px;
+}
+
+.detail-reply-list{
+  min-height: 400px;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.no-replies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #888;
+}

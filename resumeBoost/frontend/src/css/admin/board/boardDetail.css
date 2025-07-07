@@ -1,0 +1,171 @@
+.board-detail {
+  flex: 1;
+  height: calc(100vh - 80px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-detail .board-detail-con {
+  flex: 0 1 1400px;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 1px solid #f0f; */
+
+  /* gap: 30px;
+  box-sizing: border-box; */
+
+  /* padding: 20px 0; */
+  box-sizing: border-box;
+}
+
+.board-detail .board-detail-con > form {
+  width: 100%;
+
+  /* border: 1px solid #f00; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  overflow: auto;
+}
+
+.board-detail .board-detail-con > form::-webkit-scrollbar { /* 스크롤 바 숨기기 */
+  display: none;
+}
+
+.board-detail .board-detail-con > form > .board-detail-head {
+  /* border: 2px solid #00f; */
+
+}
+
+
+.board-detail .board-detail-con > form > .board-detail-head > .admin-board-detail-btns {
+  display: flex;
+  gap: 30px;
+}
+
+
+.board-detail .board-detail-con > form > .board-detail-head > .admin-board-detail-btns span {
+  /* border: 2px solid #f00; */
+  border-radius: 15px;
+
+  font-size: 30px;
+  color: #fff;
+  background-color: #50db7a;
+
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+}
+
+
+.board-detail .board-detail-con > form > .board-detail-body {
+  display: flex;
+  gap: 20px;
+}
+
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-update {
+  flex: 3;
+
+  /* border: 1px solid rgb(0, 17, 255); */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-update > span {
+  cursor: pointer;
+}
+
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-update > .board-detail-updates {
+  display: flex;  
+  gap: 10px;
+}
+
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-update textarea {
+  width: 100%;
+
+  height: 500px;
+
+  resize: none; /* textarea 고정 */
+
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+
+  font-size: 16px;
+}
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-infos {
+  flex: 2;
+
+  border-radius: 10px;
+  box-shadow: inset 0 0 3px #686868;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-infos > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-infos > ul > li {
+
+  display: flex;
+
+  
+  
+  padding: 5px 0;
+  box-sizing: border-box;
+
+}
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-infos > ul > li label {
+
+  flex: 1;
+  
+
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-infos > ul > li input {
+
+  flex: 2;
+
+  border-radius: 5px;
+  border: 2px solid #686868;
+  text-indent: 5px; /* 글머리 공백*/
+
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-infos > ul > li .admin-board-img {
+  width: 400px;
+  height: 400px;
+}
+
+.board-detail .board-detail-con > form > .board-detail-body > .board-detail-infos > ul > li > .admin-board-img > img {
+  width: 100%;
+  display: block;
+}
+

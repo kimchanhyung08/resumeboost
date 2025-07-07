@@ -1,0 +1,59 @@
+name: Deploy to AWS EC2
+
+on:
+  push:
+    branches: [ "dev" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v1
+        with:
+          java-version: '17'
+      
+      - name: Grant execute permission for gradlew
+        run: chmod +x resumeboost/gradlew
+        shell: bash
+
+      - name: Build with Gradle
+        run: |
+          cd resumeboost
+          ./gradlew clean build
+        shell: bash
+      
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push Backend Docker image
+        run: |
+          cd resumeboost
+          docker build -t hws1016/resumeboost-backend:latest .
+          docker push hws1016/resumeboost-backend:latest
+
+      - name: Build and push Frontend Docker image
+        run: |
+          cd frontend
+          docker build -t hws1016/resumeboost-frontend:latest .
+          docker push hws1016/resumeboost-frontend:latest
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /home/ec2-user   # /home/ec2-user에 docker-compose.yml 파일이 있어야 함
+            docker-compose pull  # 최신 이미지 다운로드
+            docker-compose up -d # 백그라운드에서 컨테이너 실행
+            docker image prune -af  # 불필요한 이미지를 정리
+            

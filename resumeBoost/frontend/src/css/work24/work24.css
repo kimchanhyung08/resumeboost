@@ -1,0 +1,152 @@
+.work24{
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.work24-con{
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 20px auto;
+}
+
+.work24-con .work24-header{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.work24-con .work24-header h1{
+  height: auto;
+  color: #292e41;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.work24-con .work24-header span{
+  font-size: 15px;
+}
+
+.work24-con .work24-body{
+  min-width: 1200px;
+  margin-top: 20px;
+}
+
+.work24-con .work24-body p{
+  width: 100%;
+  height: calc(100vh - 80px - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+}
+
+.work24-con .work24-body ul{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 208px);
+  grid-auto-rows: 208px;
+  gap: 24px;
+}
+
+.work24-con .work24-body ul li{
+  width: 404px;
+  height: 208px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 기본 그림자 */
+}
+
+.work24-con .work24-body ul li:hover{
+  transform: translateY(-5px); /* 살짝 위로 이동 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 강조 */
+}
+
+.work24-con .work24-body ul li a{
+  display: block;
+  padding: 24px 24px 20px;
+  border: 1px solid #d7dce5;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.job-logo{
+  display: block;
+  width: 110px;
+  height: 38px;
+  overflow: hidden;
+}
+
+.job-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  object-position: left;
+}
+
+a > .job-title{
+  display: block;
+  overflow: hidden;
+  margin-top: 12px;
+  max-width: 362px;
+  color: #292e41;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.job-corp{
+  display: block;
+  overflow: hidden;
+  margin-top: 4px;
+  max-width: 252px;
+  color: #475067;
+  font-size: 14px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.job-desc{
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  margin-top: 35px;
+  color: #475067;
+  justify-content: space-between;
+}
+
+.desc-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.job-desc .job-emp span.vertical{
+  font-size: 8px;
+  color: #d7dce5;
+  margin: 0 4px;
+}
+
+.job-desc img{
+  width: 15px;
+  height: 15px;
+}
+
+.job-time{
+  color:#67738e;
+}

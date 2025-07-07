@@ -1,0 +1,45 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1111
+    url: jdbc:mysql://ec2-13-125-236-223.ap-northeast-2.compute.amazonaws.com:3307/resumeboostdb
+
+  #  thymeleaf:
+  #    prefix: classpath.templates/
+  #    suffix: .html
+  #    cache: false
+  devtools:
+    restart:
+      enabled: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update #drop,update,create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+  #spring
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+  profiles:
+    include: aws
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
+
+file.path: "E:/saveFiles"
+
+kakaopay:
+  secret-key: DEV253954679F732C951B24C65E73933D731D33D
+  cid: TC0ONETIME

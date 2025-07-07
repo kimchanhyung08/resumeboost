@@ -1,0 +1,186 @@
+.admin-pay-detail {
+  flex: 1;
+  height: calc(100vh - 80px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-pay-detail .admin-pay-detail-con {
+  flex: 0 1 1400px;
+  height: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+
+  /* border: 1px solid #f00; */
+
+  padding: 20px 0;
+  box-sizing: border-box;
+
+
+  position: relative;
+}
+
+
+.admin-pay-detail .admin-pay-detail-con > span {
+  
+  border-radius: 15px;
+  
+  font-size: 30px;
+  color: #fff;
+  background-color: #50db7a;
+
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 6vw;
+  left: 0;
+
+}
+
+
+
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-left {
+  flex: 1;
+
+  border-radius: 10px;
+  box-shadow: inset -1px -1px 2px rgb(63, 63, 63);
+  box-sizing: border-box;
+
+  /* border: 1px solid #00f; */
+
+  padding: 10px;
+  box-sizing: border-box;
+
+
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-left > h1 {
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-left > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-left > ul > li {
+
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset -1px -1px 2px rgb(63, 63, 63);
+  box-sizing: border-box;
+
+
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-left > ul > li .pay-detail-pocket > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-left > ul > li .pay-detail-pocket > ul > li {
+  display: flex;
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-left > ul > li .pay-detail-pocket > ul > li span:nth-child(1) {
+  flex: 1;
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-left > ul > li .pay-detail-pocket > ul > li span:nth-child(2) {
+  flex: 3;
+
+  border-radius: 5px;
+  border: 2px solid rgb(63, 63, 63);
+  box-sizing: border-box;
+}
+
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-right {
+  flex: 1;
+
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset -1px -1px 2px rgb(63, 63, 63);
+  box-sizing: border-box;
+
+  /* border: 1px solid #00f; */
+
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-right .right-pay-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-right .right-pay-info > ul.info-pay {
+
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset -1px -1px 2px rgb(63, 63, 63);
+  box-sizing: border-box;
+ 
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-right .right-pay-info > ul.info-pay li {
+  display: flex;
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-right .right-pay-info > ul.info-pay li > span:nth-child(1) {
+  flex: 1;
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-right .right-pay-info > ul.info-pay li > span:nth-child(2) {
+  flex: 3;
+
+ 
+  border-bottom: 2px solid rgb(63, 63, 63);
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-right .right-pay-info > ul.info-member {
+
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset -1px -1px 2px rgb(63, 63, 63);
+  box-sizing: border-box;
+  
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-right .right-pay-info > ul.info-member li {
+  display: flex;
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-right .right-pay-info > ul.info-member li span:nth-child(1) {
+  flex: 1;
+}
+
+.admin-pay-detail .admin-pay-detail-con .admin-pay-detail-right .right-pay-info > ul.info-member li span:nth-child(2) {
+  flex: 3;
+
+ 
+  border-bottom: 2px solid rgb(63, 63, 63);
+  box-sizing: border-box;
+}

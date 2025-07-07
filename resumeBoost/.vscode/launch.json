@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ResumeboostApplication<resumeboost>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "org.project.resumeboost.ResumeboostApplication",
+      "projectName": "resumeboost",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

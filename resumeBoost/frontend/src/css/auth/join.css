@@ -1,0 +1,178 @@
+.join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  flex-direction: column;
+}
+
+.join-con {
+  background-color: white;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 0.1px solid rgb(214, 214, 214);
+  width: 650px;
+  margin-bottom: 10px;
+}
+
+.join-header {
+  text-align: center;
+  
+}
+
+.join-header h1 {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.join-header h1 img{
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.join-choice {
+  margin-bottom: 10px;
+}
+
+.back-button{
+  position: absolute;
+  background-color: inherit;
+  left: 70px;
+  top: 20px;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.back-button:hover{
+  color: #0cbb32;
+}
+
+.transfer-button {
+  position: absolute;
+  background-color: inherit;
+  right: 20px;
+  top: 20px;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.transfer-button:hover {
+  color: #0cbb32;
+}
+
+.join-conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.join-conteiner > div:nth-child(1){
+  margin-bottom: 0;
+}
+
+.join-conteiner > div:nth-child(4){
+  margin-bottom: 0;
+}
+
+.join-conteiner > div {
+  margin-bottom: 15px;
+}
+
+.join-conteiner label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.join-conteiner select{
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgb(214 214 214);
+  border-radius: 8px;
+}
+
+.join-conteiner input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgb(214 214 214);
+  border-radius: 8px;
+}
+
+.status{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.join-conteiner button {
+  margin-top: 5px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  background-color: #00b62a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.join-conteiner button:hover {
+  background-color: #0f942c;
+}
+
+.status-message {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #dc3545;
+}
+
+.status-message.success {
+  color: rgb(35, 35, 207);
+}
+
+.status-message.error {
+  color: #dc3545;
+}
+
+.join-footer {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.join-footer:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.join-footer:disabled:hover{
+  background-color: #ccc;
+}
+
+.join-footer.enabled {
+  background-color: #28a745;
+}

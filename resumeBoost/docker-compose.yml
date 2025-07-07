@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .  # 프로젝트 루트 폴더
+      dockerfile: resumeboost/Dockerfile  # 백엔드 Dockerfile 위치
+    image: hws1016/resumeboost-backend:latest
+    ports:
+      - "8090:8090"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  frontend:
+    build:
+      context: .  # 프로젝트 루트 폴더
+      dockerfile: frontend/Dockerfile  # 프론트엔드 Dockerfile 위치
+    image: hws1016/resumeboost-frontend:latest
+    ports:
+      - "80:80"
+
+#   mysql:
+#     image: mysql:latest
+#     container_name: mysql-container
+#     restart: always
+#     environment:
+#       MYSQL_ROOT_PASSWORD: root
+#       MYSQL_DATABASE: resumeboostdb
+#       MYSQL_USER: root
+#       MYSQL_PASSWORD: 1111
+#     ports:
+#       - "3307:3306"
+#     volumes:
+#       - mysql_data:/var/lib/mysql
+
+# volumes:
+#   mysql_data:

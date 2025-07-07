@@ -1,0 +1,28 @@
+.admin-index {
+  flex: 1;
+  height: calc(100vh - 80px);
+
+  /* border: 1px solid #f00; */
+
+}
+
+.admin-index .admin-index-con {
+  flex: 0 1 1400px;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 1px solid #f0f; */
+
+  /* gap: 30px;
+  box-sizing: border-box; */
+
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+
+

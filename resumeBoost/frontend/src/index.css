@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url(./css/index.css);
+@import url(./css/basic/main.css);
+@import url(./css/board/board.css);
+@import url(./css/board/boardWrite.css);
+@import url(./css/board/boardDetail.css);
+@import url(./css/auth/join.css);
+@import url(./css/auth/login.css);
+@import url(./css/admin/admin.css);
+@import url(./css/member/mentorList.css);
+@import url(./css/member/mentorDetail.css);
+@import url(./css/member/kakaomodify.css);
+@import url(./css/chatbot.css);
+@import url(./css/member/memberDetail.css);
+@import url(./css/item/item.css);
+@import url(./css/inquiry/inquiry.css);
+@import url(./css/work24/work24.css);
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}

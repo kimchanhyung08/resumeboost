@@ -1,0 +1,140 @@
+.admin-board {
+
+  flex: 1;
+  height: calc(100vh - 80px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.admin-board .admin-board-con {
+  flex: 0 1 1400px;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 1px solid #f0f; */
+
+  gap: 30px;
+  box-sizing: border-box;
+
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+
+/* 검색 창 */
+.admin-board .admin-board-con .admin-board-search {
+
+  width: 100%;
+  /* border: 1px solid #2be28d; */
+  /* border-radius: 10px; */
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+}
+
+.admin-board .admin-board-con .admin-board-search form {
+  flex: 0 1 1000px;
+
+  display: flex;
+  
+
+  /* border: 5px solid #e22b2b; */
+}
+
+.admin-board .admin-board-con .admin-board-search form select {
+  flex: 1;
+  
+  border: 2px solid #2be28d;
+}
+
+.admin-board .admin-board-con .admin-board-search form input {
+  flex: 5;
+
+  font-size: 30px;
+
+  border: 0;
+}
+
+.admin-board .admin-board-con .admin-board-search form input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.admin-board .admin-board-con .admin-board-search form button {
+
+  flex: 1;
+
+  border: 2px solid #2be28d;
+
+  background-color: #fff;
+
+  cursor: pointer;
+}
+
+
+
+/* 리스트  */
+.admin-board .admin-board-con .admin-board-list {
+  width: 100%;
+  height: 800px;
+  /* border: 1px solid rgb(17, 0, 255); */
+
+}
+
+.admin-board .admin-board-con .admin-board-list .admin-board-head > ul {
+  padding: 20px;
+  box-shadow: inset -1px -1px 3px rgb(59, 59, 59);
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-board .admin-board-con .admin-board-list .admin-board-head > ul > li {
+  flex: 1;
+}
+
+.admin-board .admin-board-con .admin-board-list .admin-board-body .board-pocket {
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.admin-board .admin-board-con .admin-board-list .admin-board-body .board-pocket > ul {
+  display: flex;
+  justify-content: space-between;
+
+  box-shadow: inset -1px -1px 3px rgb(59, 59, 59);
+  border-radius: 10px;
+
+  box-sizing: border-box;
+
+  transition: all 0.4s;
+  
+  cursor: pointer;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+.admin-board .admin-board-con .admin-board-list .admin-board-body .board-pocket > ul:hover {
+  transform: translate(-7px, -7px); /* 이동 */
+}
+
+.admin-board .admin-board-con .admin-board-list .admin-board-body .board-pocket > ul > li {
+  flex: 1;
+
+}
+
+
+
+
