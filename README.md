@@ -6,7 +6,14 @@
 취준생이 첨삭 상품을 구매하면 멘토와 연결됩니다.
 
 ## 사용기술
-- frontend : React, Redux, Redux Toolkit, Axios, HTML, CSS, JS
+- frontend :
+ - React
+ - Redux
+ - Redux Toolkit
+ - Axios
+ - HTML
+ - CSS
+ - JS
 - backend : Java, Spring ,Spring Boot,Spring security(작성자 ,팀원2) ,MySQL
 - DevOps & 기타 API : Docker(팀원1, 팀원2),Git AWS(팀원1, 팀원2) ,Github, Github Actions(팀원1) ,Kakao Map (팀원2), Kakao Pay (팀원2), Kakao login (팀원2) ,고용24 API (팀원1)
 
