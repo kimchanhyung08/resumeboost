@@ -1,5 +1,6 @@
 # RESUMEBOOST
-<img width="800" height="393" alt="Image" src="https://github.com/user-attachments/assets/975ddf33-3c46-4a88-805b-108a13d21dea" />
+<img width="800" height="393" alt="Image" src="https://github.com/user-attachments/assets/975ddf33-3c46-4a88-805b-108a13d21dea" />  
+
 ## 프로젝트 개요
 취업준비생들에게 간편한 첨삭 서비스를 제공해주는 플랫폼 입니다.  
 취준생이 첨삭 상품을 구매하면 멘토와 연결됩니다.
