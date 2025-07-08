@@ -25,7 +25,7 @@
   - Git AWS(팀원1, 팀원2)
   - Github
   - Github Actions(팀원1)
-  - - 고용24 API (팀원1)
+  - 고용24 API (팀원1)
   - Kakao Map (팀원2)
   - Kakao Pay (팀원2)
   - Kakao login (팀원2)
