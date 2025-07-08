@@ -1,10 +1,13 @@
 # RESUMEBOOST
 
 ## 프로젝트 개요
-
+취업준비생들에게 간편한 첨삭 서비스를 제공해주는 플랫폼 입니다. 
+취준생이 첨삭 상품을 구매하면 멘토와 연결됩니다.
 ## 사용기술
-- React, Spring Boot, MySQL
-- Spring Security, Kakao API (팀원1), Docker (팀원2), Github Actions (팀원2)
+- frontend : React, Redux, Redux Toolkit, Axios, HTML, CSS, JS
+- backend : Java, Spring ,Spring Boot,Spring security(작성자 ,팀원2) ,MySQL
+- DevOps & 기타 API : Docker(팀원1, 팀원2),Git AWS(팀원1, 팀원2) ,Github, Github Actions(팀원1) ,Kakao Map (팀원2), Kakao Pay (팀원2), Kakao login (팀원2) ,고용24 API (팀원1)
+
 ## 주요기능
 
 ## 내역할
