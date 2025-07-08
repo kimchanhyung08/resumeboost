@@ -1,7 +1,7 @@
 # RESUMEBOOST
 
 ## 프로젝트 개요
-취업준비생들에게 간편한 첨삭 서비스를 제공해주는 플랫폼 입니다. 
+취업준비생들에게 간편한 첨삭 서비스를 제공해주는 플랫폼 입니다.  
 취준생이 첨삭 상품을 구매하면 멘토와 연결됩니다.
 ## 사용기술
 - frontend : React, Redux, Redux Toolkit, Axios, HTML, CSS, JS
