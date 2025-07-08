@@ -32,7 +32,12 @@
   
 
 ## 주요기능
-
+- 로그인, 회원가입
+- 결제 (KakaoPay)
+- 게시판 CRUD
+- 상품, 장바구니
+- 고객센터 (챗봇)
+- 공채속보 (Open API)
 ## 내역할
 <img width="800" height="394" alt="Image" src="https://github.com/user-attachments/assets/655ff9a8-48d9-41ef-91ad-8f08d3e57d0e" />  
 
