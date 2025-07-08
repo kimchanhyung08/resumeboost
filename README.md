@@ -34,6 +34,8 @@
 ## 주요기능
 
 ## 내역할
+<img width="800" height="394" alt="Image" src="https://github.com/user-attachments/assets/655ff9a8-48d9-41ef-91ad-8f08d3e57d0e" />  
+
 - 관리자 페이지에서 DB와 연동하여 CRUD 기능을 구현했습니다.
 - Spring JPA를 사용하여 데이터 조회, 등록, 수정, 삭제 기능을 처리했습니다.
 ## 배운점 & 보완점
